@@ -10,6 +10,9 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+    h1 {
+        color: white;
+    }
 
 </style>
