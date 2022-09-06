@@ -2,7 +2,7 @@
     <div>
         <div id="parent">
             <!-- <h2 id="provincia" v-if="dados">{{ dados[0]}}</h2> -->
-            <h2>Maputo (temp)</h2>
+            <h2>Nampula (temp)</h2>
             <img src="" alt="">
             <br>
             <br>
