@@ -1,12 +1,11 @@
 <template>
   
   <BarraPesquisa />
+
   <div id="card">
-    <!-- Falta outros dois cards -->
     <CardPrincipal :dados="dados1"/>
     <CardPrincipal :dados="dados2"/>
     <CardPrincipal :dados="dados3"/>
-
   </div>
 
   <FooterVue />
@@ -22,12 +21,9 @@ import BarraPesquisa from './BarraPesquisa.vue';
 export default {
   name: 'WeatherApp',
   components: {
-    FooterVue,
+    BarraPesquisa,
     CardPrincipal,
-    BarraPesquisa
-  },
-  props: {
-    msg: String
+    FooterVue,
   },
 
   data() {

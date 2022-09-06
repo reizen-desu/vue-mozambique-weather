@@ -1,15 +1,18 @@
 <template>
     <div>
         <div id="parent">
-            <h2 id="provincia" v-if="dados">{{ dados[0]}}</h2>
+            <!-- <h2 id="provincia" v-if="dados">{{ dados[0]}}</h2> -->
+            <h2>Maputo (temp)</h2>
             <img src="" alt="">
             <br>
             <br>
             <br>
             <br>
             <div id="graus">
-                <h4><span>{{ dados[1]}}</span>ºC</h4>
-                <h4><span>{{ dados[2] }}</span>ºC</h4>
+                <!-- <h4><span>{{ dados[1] }}</span> ºC</h4> -->
+                <!-- <h4><span>{{ dados[2] }}</span> ºC</h4> -->
+                <h4><span>25</span> ºC</h4>
+                <h4><span>19</span> ºC</h4>
             </div>
         </div>
     </div>
