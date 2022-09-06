@@ -1,13 +1,19 @@
 <template>
-    <h2>Reizen Dos Santos - DAW 2022</h2>
+    <div>
+        <h4>Reizen Dos Santos - DAW 2022</h4>
+    </div>
 </template>
 
 <script>
     export default {
-        name: 'Footer',
+        name: 'FooterVue'
     }
 </script>
 
 <style scoped>
-    
+    div {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
 </style>
