@@ -15,5 +15,6 @@
         width: 100%;
         position: fixed;
         bottom: 0;
+        text-align: center;
     }
 </style>
