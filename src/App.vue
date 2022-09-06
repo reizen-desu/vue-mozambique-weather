@@ -19,9 +19,9 @@ body {
   height:100vh;
   width:100vw;
   background:linear-gradient(175deg, #411510, #411530 60%, white 60%, white);
+  overflow-y: hidden;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  z-index: -10;
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
 </style>
