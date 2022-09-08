@@ -9,6 +9,13 @@ This is an app to display weather information, mainly for the [Mozambique provin
 
 Implemented using the [Vue](https://vuejs.org/) framework and the [Open Weather API](https://openweathermap.org/) to fetch the weather information.
 
+### Concepts applied
+
+- Single File Components
+- Fetching data from API
+- Passing data between child and parent Components
+- Deployment on GitHub
+
 ## Project setup
 
 ```

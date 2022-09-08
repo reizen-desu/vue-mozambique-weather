@@ -9,6 +9,13 @@ Este é um pequeno aplicativo que mostra as informações de Mozambique para as 
 
 Foi implementado usando o framework [Vue](https://vuejs.org/) e para o API usou-se o  [Open Weather API](https://openweathermap.org/) para obter dados da temperatura.
 
+### Conceitos aplicados
+
+- Single File Components
+- Buscar dados de uma API
+- Passagem de dados entre componentes filho e parente
+- Hospedagem no GitHub
+
 ## Como iniciar
 Clone ou faça fork do projeto e no directório corras os comandos:
 ```
