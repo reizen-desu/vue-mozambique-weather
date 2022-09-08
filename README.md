@@ -1,4 +1,7 @@
 # Vue Mozambique Weather
+[![pt](https://img.shields.io/badge/language-português-red.svg)](https://github.com/reizen-desu/vue-mozambique-weather/blob/main/README.pt-pt.md)
+[![GitHub issues](https://img.shields.io/github/issues/reizen-desu/vue-mozambique-weather)](https://github.com/reizen-desu/vue-mozambique-weather/issues)
+[![GitHub stars](https://img.shields.io/github/stars/reizen-desu/vue-mozambique-weather)](https://github.com/reizen-desu/vue-mozambique-weather/stargazers)
 
 ## Description
 
