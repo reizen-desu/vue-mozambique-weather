@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div id="parent">
+    <div  id="parent">
+        <div>
             <!-- <h2 id="provincia" v-if="dados">{{ dados[0]}}</h2> -->
             <h2>Nampula (temp)</h2>
             <img src="" alt="">
@@ -28,7 +28,13 @@
 </script>
 
 <style scoped>
-    div {
+
+    #parent {
+        box-shadow: 1px 1px 10px #4E3863;
+
+}
+
+div {
         margin: 20px 0;
         border-radius: 15px;
         text-align: center;
@@ -36,19 +42,12 @@
         background-color: #4E3863;
         width: 250px;
         /* height: 100px; */
+        
     }
 
-    #provincia {
-        text-align: center;
-    }
 
-    h4 {
-        font-size: 15px;
-    }
 
-    h4 span {
-        font-size: 23px;
-    }
+ 
 
     #graus {
   /* margin-top: 30px; */
