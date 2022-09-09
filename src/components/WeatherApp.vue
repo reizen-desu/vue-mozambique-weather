@@ -110,9 +110,7 @@ export default {
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
   #card {
     /* width: 100%; */
     display: flex;
@@ -120,18 +118,11 @@ export default {
     flex-direction: row;
   }
 
-  /* @media only screen and (max-width: 950px) {
-  #card {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 40% 40%;
-  }
-} */
 
 @media only screen and (max-width: 600px) {
   #card {
     display: flex;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
     flex-direction: column;
   }
