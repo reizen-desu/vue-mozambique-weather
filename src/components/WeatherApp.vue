@@ -57,8 +57,8 @@ export default {
           .then((resp) => resp.json())
           .then((data) => {
             this.dados1[0] = data.name;
-            this.dados1[1] = data.main.temp_min;
-            this.dados1[2] = data.main.temp_max;
+            this.dados1[1] = data.main.temp;
+            // this.dados1[2] = data.main.temp_max;
             this.dados1[3] = data.weather[0].main;
             console.log(data)
           })

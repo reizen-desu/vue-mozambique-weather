@@ -9,8 +9,7 @@
             <br>
             <br>
             <div id="graus">
-                <h4><span>{{ dados[1] }}</span> ºC</h4>
-                <h4><span>{{ dados[2] }}</span> ºC</h4>
+                <h4>Tempo actual: <span>{{ dados[1] }}</span> ºC</h4>
             </div>
         </div>
     </div>
@@ -31,11 +30,11 @@
 <style scoped>
 
     #parent {
-        box-shadow: 1px 1px 10px #4E3863;
-
-}
-
-div {
+        
+    }
+    
+    div {
+    box-shadow: 1px 1px 10px #4E3863;
         margin: 20px 0;
         border-radius: 15px;
         text-align: center;
