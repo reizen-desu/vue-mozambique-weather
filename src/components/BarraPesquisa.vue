@@ -1,7 +1,8 @@
 <template>
     <div id="principal">
             <form>
-                <input type="text" name="pesquisar" id="texto"         placeholder="Pesquisar cidade específica">
+                <input v-on:click="showProvinces()"
+                type="text" name="pesquisar" id="texto" placeholder="Pesquisar cidade específica">
                 <input type="submit" value="Pesquisar" id="botao">
             </form>
     </div>
@@ -11,6 +12,12 @@
 // import CardPrincipal from './CardPrincipal.vue';
     export default {
         name: "BarraPesquisa",
+        
+        methods: {
+            showProvinces() {
+                console.log("Tenho que adicionar as provincias como sugestao ao clicar na barra...");
+            }
+        }
     }
 </script>
 
