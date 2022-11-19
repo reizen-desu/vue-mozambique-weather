@@ -1,11 +1,11 @@
 <template>
-  
+
   <BarraPesquisa />
 
   <div id="card">
-    <CardPrincipal :dados="dados1"/>
-    <CardPrincipal :dados="dados2"/>
-    <CardPrincipal :dados="dados3"/>
+    <CardPrincipal :dados="dados1" />
+    <CardPrincipal :dados="dados2" />
+    <CardPrincipal :dados="dados3" />
   </div>
 
   <FooterVue />
@@ -68,8 +68,8 @@ export default {
         for (let a = this.controlador - 3; a < this.controlador; a++) {
           fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" +
-              this.cidades[a] +
-              ",MZ&units=metric&APPID=e3cebe94c098059265d182ddb3baa9ea"
+            this.cidades[a] +
+            ",MZ&units=metric&APPID=e3cebe94c098059265d182ddb3baa9ea"
           )
             .then((resp) => resp.json())
             .then((data) => {
@@ -111,12 +111,12 @@ export default {
 </script>
 
 <style>
-  #card {
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-  }
+#card {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -126,6 +126,7 @@ export default {
     grid-template-columns: 40% 40%;
   }
 }
+
 @media only screen and (max-width: 750px) {
   #card {
     display: flex;

@@ -5,16 +5,16 @@
 </template>
 
 <script>
-    export default {
-        name: 'FooterVue'
-    }
+export default {
+    name: 'FooterVue'
+}
 </script>
 
 <style scoped>
-    div {
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        text-align: center;
-    }
+div {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
 </style>

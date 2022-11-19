@@ -1,5 +1,5 @@
 <template>
-    <div  id="parent">
+    <div id="parent">
         <div>
             <!-- <h2 id="provincia" v-if="dados">{{ dados[0]}}</h2> -->
             <h2 v-if="dados">{{ dados[0] }}</h2>
@@ -17,44 +17,40 @@
 
 <script>
 
-    export default {
-        name: "CardPrincipal",
-        props: ["dados"],
+export default {
+    name: "CardPrincipal",
+    props: ["dados"],
 
-        
-       
+
+
 }
 
 </script>
 
 <style scoped>
+#parent {}
 
-    #parent {
-        
-    }
-    
-    div {
+div {
     box-shadow: 1px 1px 10px #4E3863;
-        margin: 20px 0;
-        border-radius: 15px;
-        text-align: center;
-        color: white;
-        background-color: #4E3863;
-        width: 250px;
-        /* height: 100px; */
-        
-    }
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background-color: #4E3863;
+    width: 250px;
+    /* height: 100px; */
 
-
-
- 
-
-    #graus {
-  /* margin-top: 30px; */
-  display: flex;
-  width: 70%;
-  padding-left: 30px;
-  justify-content: space-around;
 }
 
+
+
+
+
+#graus {
+    /* margin-top: 30px; */
+    display: flex;
+    width: 70%;
+    padding-left: 30px;
+    justify-content: space-around;
+}
 </style>
