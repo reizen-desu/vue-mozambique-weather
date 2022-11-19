@@ -110,7 +110,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
   #card {
     /* width: 100%; */
     display: flex;
@@ -119,10 +119,17 @@ export default {
   }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+  #card {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 40%;
+  }
+}
+@media only screen and (max-width: 750px) {
   #card {
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
