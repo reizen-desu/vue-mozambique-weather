@@ -1,56 +1,33 @@
 <template>
-    <div id="parent">
-        <div>
-            <!-- <h2 id="provincia" v-if="dados">{{ dados[0]}}</h2> -->
-            <h2 v-if="dados">{{ dados[0] }}</h2>
-            <img src="" alt="">
-            <br>
-            <br>
-            <br>
-            <br>
-            <div id="graus">
-                <h4>Tempo actual: <span>{{ dados[1] }}</span> ºC</h4>
-            </div>
-        </div>
+    <div>
+        <h2 v-if="dados">{{ dados[0] }}</h2>
+        <img src="" alt="">
+        <h4>Tempo actual: <span>{{ dados[1] }} ºC</span></h4>
     </div>
 </template>
 
 <script>
-
 export default {
     name: "CardPrincipal",
     props: ["dados"],
-
-
-
 }
-
 </script>
 
 <style scoped>
-#parent {}
-
 div {
-    box-shadow: 1px 1px 10px #4E3863;
-    margin: 20px 0;
+    margin: 50px 0;
     border-radius: 15px;
     text-align: center;
     color: white;
     background-color: #4E3863;
     width: 250px;
-    /* height: 100px; */
-
 }
 
+h4 {
+    color: #C0C0C0;
+}
 
-
-
-
-#graus {
-    /* margin-top: 30px; */
-    display: flex;
-    width: 70%;
-    padding-left: 30px;
-    justify-content: space-around;
+h4 span {
+    color: rgb(59, 118, 122);
 }
 </style>
