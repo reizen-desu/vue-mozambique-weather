@@ -12,9 +12,12 @@ export default {
 
 <style scoped>
 div {
-    width: 100%;
-    position: fixed;
+    background-color: #69465B;
+    color: white;
+    position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 2.5rem;
     text-align: center;
 }
 </style>
