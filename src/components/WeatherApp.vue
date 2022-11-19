@@ -17,7 +17,6 @@ import FooterVue from './Footer.vue';
 import CardPrincipal from './CardPrincipal.vue';
 import BarraPesquisa from './BarraPesquisa.vue';
 
-
 export default {
   name: 'WeatherApp',
   components: {
@@ -105,29 +104,17 @@ export default {
   },
 
 };
-
-
-
 </script>
 
 <style>
 #card {
-  /* width: 100%; */
   display: flex;
   justify-content: space-around;
   flex-direction: row;
 }
 
 
-@media only screen and (max-width: 900px) {
-  #card {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 40% 40%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   #card {
     display: flex;
     justify-content: center;
