@@ -3,23 +3,21 @@
 </template>
 
 <script>
-import WeatherApp from './components/WeatherApp.vue'
+import WeatherApp from "./components/WeatherApp.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     WeatherApp,
-  }
-}
+  },
+};
 </script>
 
 <style>
-body {
-  height: 100vh;
-  width: 100vw;
+html {
+  min-height: 100vh;
+  position: relative;
   background: linear-gradient(175deg, #411510, #411530 60%, white 60%, white);
-  overflow-y: hidden;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  z-index: -10;
 }
 </style>
