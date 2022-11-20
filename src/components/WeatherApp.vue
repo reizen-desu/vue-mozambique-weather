@@ -7,8 +7,8 @@
     <CardPrincipal :dados="dados2" />
     <CardPrincipal :dados="dados3" />
   </div>
-
   <FooterVue />
+
 </template>
 
 <script>
@@ -100,7 +100,7 @@ export default {
   created() {
     this.interval = setInterval(() => {
       this.renew();
-    }, 2000);
+    }, 7000);
   },
 
 };
@@ -113,13 +113,24 @@ export default {
   flex-direction: row;
 }
 
+#main-card {
+  width: 250px;
+}
+
 
 @media only screen and (max-width: 800px) {
+
   #card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+
+  #main-card {
+    width: 450px;
+    max-width: 100%;
+  }
+
 }
 </style>
