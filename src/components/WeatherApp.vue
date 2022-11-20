@@ -1,6 +1,6 @@
 <template>
 
-  <BarraPesquisa />
+  <BarraPesquisa @show-province="showProvince"></BarraPesquisa>
 
   <div id="card">
     <CardPrincipal :dados="dados1" />

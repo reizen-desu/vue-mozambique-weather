@@ -1,8 +1,8 @@
 <template>
     <div id="container">
-        <v-select v-model="selected" :options="provinces" label="name" id="search-text">
+        <v-select placeholder="Choose a province" v-model="selected" :options="provinces" label="name" id="search-text">
         </v-select>
-        <input type="submit" value="Pesquisar" id="search-button" @click="showProvince()">
+        <input type="submit" value="Pesquisar" id="search-button" @click="showProvince">
     </div>
 </template>
 
@@ -32,12 +32,11 @@ export default {
     methods: {
         showProvince() {
             if (this.selected) {
-                // this.$emit('show-province', this.selected);
+                this.$emit('show-province', this.selected);
                 console.log("Provincia selecionada: " + this.selected);
             }
             else {
                 console.log("Nenhuma provincia selecionada");
-                // Sends an alert
                 alert("Choose a province first");
             }
         }
