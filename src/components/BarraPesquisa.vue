@@ -27,7 +27,7 @@ export default {
     text-align: center;
     white-space: nowrap;
     width: 100%;
-    margin: 100px 0 0 0;
+    margin: 100px 0 50px;
 }
 
 form input {
