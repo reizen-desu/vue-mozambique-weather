@@ -4,8 +4,8 @@
 
   <div id="card">
     <CardPrincipal :dados="dados1" />
-    <CardPrincipal :dados="dados2" />
-    <CardPrincipal :dados="dados3" />
+    <CardPrincipal :dados="dados2" v-if="!province" />
+    <CardPrincipal :dados="dados3" v-if="!province" />
   </div>
   <FooterVue />
 
@@ -24,6 +24,7 @@ export default {
     CardPrincipal,
     FooterVue,
   },
+
   data() {
     return {
       cidades: [
@@ -42,6 +43,7 @@ export default {
       dados3: [],
       interval: null,
       controlador: 0,
+      province: null,
     };
   },
 
@@ -92,6 +94,26 @@ export default {
             .catch((err) => console.log(err));
         }
       }
+    },
+
+    showProvince(province) {
+      fetch(
+        "https://api.openweathermap.org/data/2.5/weather?q=" +
+        province +
+        ",MZ&units=metric&APPID=e3cebe94c098059265d182ddb3baa9ea"
+      )
+        .then((resp) => resp.json())
+        .then((data) => {
+          this.dados1[0] = data.name;
+          this.dados1[1] = data.main.temp_min;
+          // this.dados1[2] = data.main.temp_max;
+          this.dados1[3] = data.weather[0].main;
+        })
+        .catch((err) => console.log(err));
+
+      this.province = province;
+      // Stop the interval
+      clearInterval(this.interval);
     },
   },
   mounted() {
